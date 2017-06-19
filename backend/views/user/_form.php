@@ -10,7 +10,7 @@ use yii\widgets\ActiveForm;
 
 <div class="user-form">
 
-    <?php $form = ActiveForm::begin(['id'=>$model->formname()]); ?>
+    <?php $form = ActiveForm::begin(['id'=>$model->formName()]); ?>
 
     <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
 
@@ -33,38 +33,34 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'updated_at')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton($model->isNewRecord?'create':'update', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
 
 </div>
 <script type="text/javascript">
-   
-        $('form#{$model->formName()}').on('beforeSubmit', function(e)
-        {
-            var \$form = $(this);
-            $.post(
-                \$form.attr("action"),
-                \$form.serialize()
-            )
-                .done(function(result){
-                    console.log(result);
-                    if(result.message == 1)
-                    {
-                        $(\$form).trigger("reset");
-                        $.pjax.reload({container:'#UserGrid'});
-                    }else
-                    {
-                        
-                        $("#message").html(result);
-                    }
+    $('form#{$model->formName()}').on('beforeSubmit',function(e)
+    {
+        var \$form = $(this);
+        $.post(
+            \$form.attr("action"),
+            \$form.serialize()
+        )
+            .done(function(result){
+                if(result == 1){
+                    $(\$form).trigger("reset");
+                    $.pjax.reload({container:'#createuserGrid'});
+                    alert("OK");
+                }else
+                {
+                    $("#message").html(result);
+                }*/
                 }).fail(function()
                 {
                     console.log("server error");
                 });
-                return false;
-        });
-     
+            return false;
+    });
 
 </script>

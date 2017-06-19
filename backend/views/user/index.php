@@ -2,8 +2,9 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use yii\widgets\Pjax;
 use yii\bootstrap\Modal;
+use yii\helpers\Url;
+use yii\widgets\Pjax;
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\UserSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -17,22 +18,19 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create User', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::button('Create User', ['value'=>Url::to(Yii::$app->request->baseUrl.'/user/create/'), 'class' => 'btn btn-success','id'=>'modalbutton']) ?>
     </p>
     <?php
         Modal::begin([
-            'header'=>'<h4>User</h4>',
+            'header'=>'<h3>Create User',
             'id'=>'modal',
             'size'=>'modal-lg',
         ]);
-        
         echo "<div id='modalContent'></div>";
-
         Modal::end();
-    ?>
-   
 
-    <?php Pjax::begin(['id'=>'UserGrid']); ?>
+    ?>
+    <?php Pjax::begin(['id'=>'createuserGrid']) ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -54,5 +52,5 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
-    <?php Pjax::end(); ?>
+    <?php Pjax::end() ?>
 </div>

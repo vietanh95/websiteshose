@@ -19,7 +19,7 @@ class AppAsset extends AssetBundle
         'js/index.js',
         'js/ckeditor/ckeditor.js',
         'js/pjax/jquery.pjax.js',
-        
+        'js/test.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
@@ -27,3 +27,4 @@ class AppAsset extends AssetBundle
         'dosamigos\assets\DosAmigosAsset',
     ];
 }
+?>

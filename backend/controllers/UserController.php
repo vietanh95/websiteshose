@@ -69,11 +69,11 @@ class UserController extends Controller
             if($model->save()){
                 echo 1;
             }
-            else
-            {
+            else{
                 echo 0;
             }
-            //return $this->redirect(['view', 'id' => $model->id]);
+            
+            return $this->redirect(['index', 'id' => $model->id]);
         } else {
             return $this->renderAjax('create', [
                 'model' => $model,
