@@ -8,6 +8,7 @@ use app\models\UserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\helpers\Json;
 
 /**
  * UserController implements the CRUD actions for User model.
@@ -37,7 +38,20 @@ class UserController extends Controller
     {
         $searchModel = new UserSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        if(Yii::$app->request->post('hasEditable')){
+            $id = Yii::$app->request->post('editableKey');
+            $User = User::findOne($id);
 
+            $out = Json::encode(['out'=>'','message'=>'']);
+            $post = [];
+            $posted = current($_POST["User"]);
+            $post['User'] = $posted;
+            if($User->load($post)){
+                $User->save();
+            }
+            echo $out;
+            return;
+        }
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -72,8 +86,7 @@ class UserController extends Controller
             else{
                 echo 0;
             }
-            
-            return $this->redirect(['index', 'id' => $model->id]);
+            // /return $this->redirect(['index', 'id' => $model->id]);
         } else {
             return $this->renderAjax('create', [
                 'model' => $model,
@@ -99,7 +112,10 @@ class UserController extends Controller
             ]);
         }
     }
-
+    public function actioncEditupdate($id){
+        $model = $this->findModel($id);
+        
+    }
     /**
      * Deletes an existing User model.
      * If deletion is successful, the browser will be redirected to the 'index' page.

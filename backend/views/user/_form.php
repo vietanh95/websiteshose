@@ -39,7 +39,8 @@ use yii\widgets\ActiveForm;
     <?php ActiveForm::end(); ?>
 
 </div>
-<script type="text/javascript">
+<?php
+$script = <<< JS
     $('form#{$model->formName()}').on('beforeSubmit',function(e)
     {
         var \$form = $(this);
@@ -51,11 +52,11 @@ use yii\widgets\ActiveForm;
                 if(result == 1){
                     $(\$form).trigger("reset");
                     $.pjax.reload({container:'#createuserGrid'});
-                    alert("OK");
+                    
                 }else
                 {
                     $("#message").html(result);
-                }*/
+                }
                 }).fail(function()
                 {
                     console.log("server error");
@@ -63,4 +64,6 @@ use yii\widgets\ActiveForm;
             return false;
     });
 
-</script>
+JS;
+$this->registerJs($script);
+?>

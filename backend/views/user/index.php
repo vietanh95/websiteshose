@@ -1,10 +1,13 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+use kartik\grid\GridView;
 use yii\bootstrap\Modal;
 use yii\helpers\Url;
 use yii\widgets\Pjax;
+use kartik\editable\Editable;
+
+
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\UserSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -22,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
     <?php
         Modal::begin([
-            'header'=>'<h3>Create User',
+            'header'=>'<h3>Create User</h3>',
             'id'=>'modal',
             'size'=>'modal-lg',
         ]);
@@ -30,15 +33,18 @@ $this->params['breadcrumbs'][] = $this->title;
         Modal::end();
 
     ?>
-    <?php Pjax::begin(['id'=>'createuserGrid']) ?>
+     <?php Pjax::begin(['id'=>'createuserGrid']) ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'pjax'=>true,
+        'export'=>false,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
             'id',
-            'username',
+            [
+                'class'=>'kartik\grid\EditableColumn',
+                'attribute'=>'username',
+            ],
             'auth_key',
             'password_hash',
             'password_reset_token',
@@ -48,7 +54,6 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'status',
             // 'created_at',
             // 'updated_at',
-
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

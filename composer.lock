@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "03b80e053ee4e8485973ec640d4b3b51",
+    "content-hash": "3581137c6b687cb64df7cc7c38410ce2",
     "packages": [
         {
             "name": "2amigos/yii2-dosamigos-asset-bundle",
@@ -91,7 +91,7 @@
                 "widget",
                 "yii"
             ],
-            "time": "2014-09-02T14:56:53+00:00"
+            "time": "2014-09-02 14:56:53"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -399,7 +399,7 @@
                 "markdown",
                 "markdown-extra"
             ],
-            "time": "2017-04-04T09:40:58+00:00"
+            "time": "2017-04-04 09:40:58"
         },
         {
             "name": "components/jquery",
@@ -521,6 +521,55 @@
                 "html"
             ],
             "time": "2017-06-03T02:28:16+00:00"
+        },
+        {
+            "name": "kartik-v/bootstrap-popover-x",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/bootstrap-popover-x.git",
+                "reference": "ce16571aa23e051b01deac71d35faf04ff436723"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-popover-x/zipball/ce16571aa23e051b01deac71d35faf04ff436723",
+                "reference": "ce16571aa23e051b01deac71d35faf04ff436723",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\plugins\\popover\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Bootstrap Popover Extended - Popover with modal behavior, styling enhancements and more.",
+            "homepage": "https://github.com/kartik-v/bootstrap-popover-x",
+            "keywords": [
+                "bootstrap",
+                "extended",
+                "jquery",
+                "modal",
+                "modal-popover",
+                "popover",
+                "popover-x"
+            ],
+            "time": "2017-01-08 18:42:34"
         },
         {
             "name": "kartik-v/mpdf",
@@ -675,7 +724,60 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2017-06-08T05:35:34+00:00"
+            "time": "2017-06-08 05:35:34"
+        },
+        {
+            "name": "kartik-v/yii2-editable",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-editable.git",
+                "reference": "5f4939aee712d35bd4ef34e419a25de7b084a221"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-editable/zipball/5f4939aee712d35bd4ef34e419a25de7b084a221",
+                "reference": "5f4939aee712d35bd4ef34e419a25de7b084a221",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "~1.7",
+                "kartik-v/yii2-popover-x": "~1.3"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\editable\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced editable widget for Yii 2.0 that allows easy editing of displayed data with numerous configuration possibilities.",
+            "homepage": "https://github.com/kartik-v/yii2-editable",
+            "keywords": [
+                "bootstrap",
+                "editable",
+                "input",
+                "jquery",
+                "popover",
+                "popover-x",
+                "widget"
+            ],
+            "time": "2017-06-05 09:21:17"
         },
         {
             "name": "kartik-v/yii2-export",
@@ -836,6 +938,54 @@
                 "yii2"
             ],
             "time": "2017-05-04T12:34:30+00:00"
+        },
+        {
+            "name": "kartik-v/yii2-popover-x",
+            "version": "v1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-popover-x.git",
+                "reference": "38f2208cf92f8c4a7758f485575a881cade1970c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-popover-x/zipball/38f2208cf92f8c4a7758f485575a881cade1970c",
+                "reference": "38f2208cf92f8c4a7758f485575a881cade1970c",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/bootstrap-popover-x": "~1.4",
+                "kartik-v/yii2-krajee-base": "~1.7"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\popover\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An extended bootstrap 3.0 popover widget which combines both the bootstrap popover and modal features and includes various new styling enhancements.",
+            "homepage": "https://github.com/kartik-v/yii2-popover-x",
+            "keywords": [
+                "bootstrap",
+                "extended",
+                "jquery",
+                "modal",
+                "modal-popover",
+                "popover",
+                "popover-x"
+            ],
+            "time": "2016-01-12T16:59:09+00:00"
         },
         {
             "name": "kartik-v/yii2-sortable",
@@ -1102,7 +1252,7 @@
                 "php",
                 "utf-8"
             ],
-            "time": "2017-03-12T18:05:36+00:00"
+            "time": "2017-03-12 18:05:36"
         },
         {
             "name": "paragonie/random_compat",
@@ -1212,7 +1362,7 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2017-03-02T00:38:00+00:00"
+            "time": "2017-03-02 00:38:00"
         },
         {
             "name": "psr/log",
@@ -1259,7 +1409,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "setasign/fpdi",
@@ -1362,7 +1512,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2017-05-19T18:47:58+00:00"
+            "time": "2017-05-19 18:47:58"
         },
         {
             "name": "twbs/bootstrap",
@@ -1563,7 +1713,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2017-04-18T23:57:19+00:00"
+            "time": "2017-04-18 23:57:19"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -1613,7 +1763,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2016-12-20T13:33:37+00:00"
+            "time": "2016-12-20 13:33:37"
         },
         {
             "name": "yiisoft/yii2-jui",
@@ -1706,7 +1856,7 @@
                 "swiftmailer",
                 "yii2"
             ],
-            "time": "2017-05-24T10:14:19+00:00"
+            "time": "2017-05-24 10:14:19"
         }
     ],
     "packages-dev": [
@@ -1767,7 +1917,7 @@
                 "gherkin",
                 "parser"
             ],
-            "time": "2016-10-30T11:50:56+00:00"
+            "time": "2016-10-30 11:50:56"
         },
         {
             "name": "bower-asset/typeahead.js",
@@ -1886,7 +2036,7 @@
                 "functional testing",
                 "unit testing"
             ],
-            "time": "2017-06-02T00:30:24+00:00"
+            "time": "2017-06-02 00:30:24"
         },
         {
             "name": "codeception/verify",
@@ -1976,7 +2126,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2017-02-16T16:15:51+00:00"
+            "time": "2017-02-16 16:15:51"
         },
         {
             "name": "fzaninotto/faker",
@@ -2026,7 +2176,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2017-06-02T07:51:32+00:00"
+            "time": "2017-06-02 07:51:32"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -2091,7 +2241,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-05-09T09:16:44+00:00"
+            "time": "2017-05-09 09:16:44"
         },
         {
             "name": "kartik-v/yii2-mpdf",
@@ -2235,7 +2385,7 @@
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
-            "time": "2017-04-07T07:07:10+00:00"
+            "time": "2017-04-07 07:07:10"
         },
         {
             "name": "phar-io/version",
@@ -2336,7 +2486,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2017-04-30T11:58:12+00:00"
+            "time": "2017-04-30 11:58:12"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -2466,7 +2616,7 @@
                 }
             ],
             "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
-            "time": "2016-04-07T12:29:16+00:00"
+            "time": "2016-04-07 12:29:16"
         },
         {
             "name": "phpspec/prophecy",
@@ -2529,7 +2679,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2017-05-31T16:22:32+00:00"
+            "time": "2017-05-31 16:22:32"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -2593,7 +2743,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-04-21T08:03:57+00:00"
+            "time": "2017-04-21 08:03:57"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -2640,7 +2790,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2016-10-03T07:40:28+00:00"
+            "time": "2016-10-03 07:40:28"
         },
         {
             "name": "phpunit/php-text-template",
@@ -2730,7 +2880,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2017-03-07T15:42:04+00:00"
+            "time": "2017-03-07 15:42:04"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -2779,7 +2929,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2017-03-07T07:36:57+00:00"
+            "time": "2017-03-07 07:36:57"
         },
         {
             "name": "phpunit/phpunit",
@@ -2863,7 +3013,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-06-04T05:24:38+00:00"
+            "time": "2017-06-04 05:24:38"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2922,7 +3072,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2017-04-01T10:07:28+00:00"
+            "time": "2017-04-01 10:07:28"
         },
         {
             "name": "psr/http-message",
@@ -2972,7 +3122,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -3017,7 +3167,7 @@
             ],
             "description": "Looks up which function or method a line of code belongs to",
             "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/",
-            "time": "2017-03-04T10:23:55+00:00"
+            "time": "2017-03-04 10:23:55"
         },
         {
             "name": "sebastian/comparator",
@@ -3081,7 +3231,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2017-05-19T04:08:27+00:00"
+            "time": "2017-05-19 04:08:27"
         },
         {
             "name": "sebastian/diff",
@@ -3133,7 +3283,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2017-05-22T07:24:03+00:00"
+            "time": "2017-05-22 07:24:03"
         },
         {
             "name": "sebastian/environment",
@@ -3183,7 +3333,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2017-05-18T10:10:00+00:00"
+            "time": "2017-05-18 10:10:00"
         },
         {
             "name": "sebastian/exporter",
@@ -3250,7 +3400,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2017-04-03T13:19:02+00:00"
+            "time": "2017-04-03 13:19:02"
         },
         {
             "name": "sebastian/global-state",
@@ -3301,7 +3451,7 @@
             "keywords": [
                 "global state"
             ],
-            "time": "2017-04-27T15:39:26+00:00"
+            "time": "2017-04-27 15:39:26"
         },
         {
             "name": "sebastian/object-enumerator",
@@ -3348,7 +3498,7 @@
             ],
             "description": "Traverses array structures and object graphs to enumerate all referenced objects",
             "homepage": "https://github.com/sebastianbergmann/object-enumerator/",
-            "time": "2017-03-12T15:17:29+00:00"
+            "time": "2017-03-12 15:17:29"
         },
         {
             "name": "sebastian/object-reflector",
@@ -3393,7 +3543,7 @@
             ],
             "description": "Allows reflection of object attributes, including inherited and non-public ones",
             "homepage": "https://github.com/sebastianbergmann/object-reflector/",
-            "time": "2017-03-29T09:07:27+00:00"
+            "time": "2017-03-29 09:07:27"
         },
         {
             "name": "sebastian/recursion-context",
@@ -3446,7 +3596,7 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
-            "time": "2017-03-07T15:09:59+00:00"
+            "time": "2017-03-07 15:09:59"
         },
         {
             "name": "sebastian/resource-operations",
@@ -3488,7 +3638,7 @@
             ],
             "description": "Provides a list of PHP built-in functions that operate on resources",
             "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
-            "time": "2016-10-03T07:43:09+00:00"
+            "time": "2016-10-03 07:43:09"
         },
         {
             "name": "sebastian/version",
@@ -3531,7 +3681,7 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-            "time": "2016-10-03T07:35:21+00:00"
+            "time": "2016-10-03 07:35:21"
         },
         {
             "name": "stecman/symfony-console-completion",
@@ -3633,7 +3783,7 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "time": "2017-05-24T09:02:43+00:00"
+            "time": "2017-05-24 09:02:43"
         },
         {
             "name": "symfony/console",
@@ -3702,7 +3852,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-02T19:25:52+00:00"
+            "time": "2017-06-02 19:25:52"
         },
         {
             "name": "symfony/css-selector",
@@ -3755,7 +3905,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2017-05-17T16:21:40+00:00"
+            "time": "2017-05-17 16:21:40"
         },
         {
             "name": "symfony/debug",
@@ -3811,7 +3961,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-07T14:09:28+00:00"
+            "time": "2017-06-07 14:09:28"
         },
         {
             "name": "symfony/dom-crawler",
@@ -3867,7 +4017,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2017-05-25T23:27:00+00:00"
+            "time": "2017-05-25 23:27:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3930,7 +4080,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-06T04:51:36+00:00"
+            "time": "2017-06-06 04:51:36"
         },
         {
             "name": "symfony/finder",
@@ -3979,7 +4129,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-01T21:02:15+00:00"
+            "time": "2017-06-01 21:02:15"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -4038,7 +4188,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-05-29T15:51:17+00:00"
+            "time": "2017-05-29 15:51:17"
         },
         {
             "name": "symfony/yaml",
@@ -4093,7 +4243,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-02T22:30:16+00:00"
+            "time": "2017-06-02 22:30:16"
         },
         {
             "name": "theseer/tokenizer",
@@ -4183,7 +4333,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2016-11-23T20:04:41+00:00"
+            "time": "2016-11-23 20:04:41"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -4230,7 +4380,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2017-05-22T12:59:26+00:00"
+            "time": "2017-05-22 12:59:26"
         },
         {
             "name": "yiisoft/yii2-faker",
@@ -4277,7 +4427,7 @@
                 "faker",
                 "yii2"
             ],
-            "time": "2017-04-19T15:05:37+00:00"
+            "time": "2017-04-19 15:05:37"
         },
         {
             "name": "yiisoft/yii2-gii",
@@ -4330,7 +4480,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2017-05-22T12:25:11+00:00"
+            "time": "2017-05-22 12:25:11"
         }
     ],
     "aliases": [],

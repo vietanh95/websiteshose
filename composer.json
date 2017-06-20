@@ -25,7 +25,8 @@
         "kartik-v/mpdf": "dev-master",
         "2amigos/yii2-table-export-widget": "*",
         "mdscomp/yii2-bootstrap-dialog": "~1.0",
-        "kartik-v/yii2-grid": "^3.1@dev"
+        "kartik-v/yii2-grid": "^3.1@dev",
+        "kartik-v/yii2-editable": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
